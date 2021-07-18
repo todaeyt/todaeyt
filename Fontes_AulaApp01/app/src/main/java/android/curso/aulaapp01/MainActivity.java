@@ -12,17 +12,14 @@ public class MainActivity extends AppCompatActivity {
 
     // Componente TextView utilizado para apresentar mensagens texto
     TextView txtTitulo;
-
     // Componente EditText utilizado para receber dados digitados
     EditText primeiroNome, segundoNome, telefone, email;
-
     // Componente Button utilizado para executar ações diversas
     Button btnLimpar, btnSalvar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
         // Método setContentView utilizado para setar qual Layout
         // será utilizado para a Activity, no caso R.layout.actibity_main
         setContentView(R.layout.activity_main);
@@ -35,7 +32,6 @@ public class MainActivity extends AppCompatActivity {
                 new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
                 initCampos();
             }
         });
@@ -44,17 +40,12 @@ public class MainActivity extends AppCompatActivity {
                 new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
                 showMensagem();
-
             }
         });
-
-
     }
 
     private void initCampos() {
-
         primeiroNome.setText("");
         segundoNome.setText("");
         telefone.setText("");
@@ -77,7 +68,6 @@ public class MainActivity extends AppCompatActivity {
         segundoNome = findViewById(R.id.segundoNome);
         telefone = findViewById(R.id.telefone);
         email = findViewById(R.id.email);
-
         btnLimpar = findViewById(R.id.btnLimpar);
         btnSalvar = findViewById(R.id.btnSalvar);
     }
